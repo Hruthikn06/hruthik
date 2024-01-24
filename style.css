@@ -1,0 +1,134 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-color: bisque;
+}
+
+.slider-container {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.slider-wrapper {
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-slide {
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.slider-image {
+    width: 2000px;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    width: 1600px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    top: 0;
+    font-size: 50px;
+    
+}
+
+.navbar {
+    position: static;
+    width: 100%;
+    background:lightseagreen;
+    color: rgb(209, 136, 136);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    top: 0;
+    font-size: 27px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    z-index: 1;
+}
+
+.prev {
+    left:0;
+}
+.next {
+    right: 0;
+}
+
+.packages .box-container .box{
+    border: 2px solid black;
+    box-shadow: var(--box-shadow);
+    background: rgb(225,222,222);
+    cursor: pointer;
+
+}
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap:2rem;
+}
+
+.packages .box-container .box:hover .image img{
+    transform: scale(1.5);
+}
+
+.packages .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.packages .box-container .box .imgage img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+.packages .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.packages .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.packages .box-container .box .content p{
+    font-size: 20px;
+    color: gray;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.btn{
+    font-size: 25px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
